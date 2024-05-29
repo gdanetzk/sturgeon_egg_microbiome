@@ -1,0 +1,363 @@
+---
+title: "Oomycete Sturgeon Eggs"
+author: "Kristi Gdanetz MacCready"
+date: "2022-05-02"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_knit$set(root.dir = "~/Documents/")
+```
+
+# Load libraries
+```{r}
+library(vegan)
+library(tidyverse)
+library(phyloseq)
+library(broom)
+library(agricolae)
+library(cowplot)
+theme_set(theme_cowplot())
+set.seed(333)
+source("~/Documents/GitHub/DenefLab-MicrobeMiseq/R/miseqR.R")
+```
+
+# Set color palette
+```{r}
+my_colors3 <- c("#8ed5f0","#ffb2b2",
+                "#bc93d1","#ffe564",
+                "#d2fe4c","#ff7fbf",
+                "#7f0000","#004c66",
+                "#995100","#3c1451",
+                "#660033", "#2c4c00",
+                "#ff7f7f","#33b5e5",
+                "#ffbb33","#aa66cc",
+                "#ff3298", "#99cc00",
+                "#cc0000","#007299",
+                "#cc6c00","#6b238e",
+                "#b20058", "#436500",
+                "#ff4444","#0099cc",
+                "#ff8800","#9933cc",
+                "#669900","#e50072")
+
+# Color codes for figures: Tube A = #ff7f7f, Tube B = #33b5e5, 
+# Tube C = #ffbb33, Tube D = #aa66cc, Tube F = #99cc00
+```
+
+# Custom fuction
+import indivual files, merge to create phyloseq object 
+```{r}
+import_mrg_physq = function(otu.table, 
+                            map.file, 
+                            tax.table, 
+                            new.physq.obj){
+  f.otu <- read.delim(otu.table, 
+                     row.names=1, 
+                     comment.char="!") %>% 
+    as.matrix()  %>% 
+    otu_table(taxa_are_rows = TRUE)
+  
+  f.mapping <- read.delim(map.file, 
+                        row.names=1, 
+                        comment.char="!") %>%
+    as.data.frame() %>%
+    sample_data()
+  
+  f.taxonomy <- read.delim(tax.table, 
+                         header=TRUE, 
+                         row.names=1) %>%
+    as.matrix() %>%
+    tax_table()
+  
+  new.physq.obj <- phyloseq(f.otu, f.mapping, f.taxonomy)
+  return(new.physq.obj)
+}
+```
+
+# Import and filter data
+Sample metadata
+```{r}
+meta_oomy <- read_delim(file = "~/Documents/fish_eggs/oomy_sample_mapping_file.txt", delim = "\t")
+```
+Make phyloseq object
+```{r}
+physq.oomy <- import_mrg_physq("~/Documents/fish_eggs/oomy.otu_tab.txt",
+                                "~/Documents/fish_eggs/oomy_sample_mapping_file.txt", 
+                                "~/Documents/fish_eggs/edit_oomy_otus_taxonomy_05_sintax.txt", 
+                                physq.oomy) #import 3 files need to create phyloseq object
+```
+
+# Summary statistics
+Calculate summary statistics, check data distribution 
+```{r}
+ntaxa(physq.oomy) #495
+nsamples(physq.oomy) #36
+
+no.zero <- physq.oomy %>%
+  prune_taxa(taxa_sums(.) > 5, .) %>%
+  prune_samples(sample_sums(.) > 20, .) #416 taxa
+
+sample_sum_df <- data.frame(sum = sample_sums(no.zero))
+# Histogram of sample read counts
+ggplot(sample_sum_df, aes(x = sum)) + 
+  geom_histogram(color = "black", fill = "indianred", binwidth = 2500) +
+  ggtitle("Distribution of sample sequencing depth") + 
+  xlab("Read counts") +
+  theme(axis.title.y = element_blank())
+
+# summary statistics
+smin <- min(sample_sums(no.zero)) #18,795
+smean <- mean(sample_sums(no.zero)) #92,165
+smax <- max(sample_sums(no.zero)) #145,784
+
+# pull out taxonomy table for Krona figure
+oomy.tax.clean <- tax_table(no.zero)
+```
+
+# Create barplot 
+Format data 
+```{r}
+# normalization
+nsample <- nsamples(no.zero)
+sample_prop <- transform_sample_counts(no.zero, function(x) x/sum(x))
+taxa_sums(sample_prop)/nsample # this gives you the abundances
+sum(taxa_sums(sample_prop)/nsample) # this should be 1 for each sample
+sample_sums(sample_prop) # this should be 1 too
+
+# remove low abundance OTUs
+no_low = filter_taxa(no.zero, function(x) mean(x) > 0.003, TRUE)
+#no_low <- prune_taxa(taxa_sums(no.zero)>=100, no.zero)
+ntaxa(no_low) #185 or 416
+no_low = prune_taxa(taxa_sums(no_low) > 0, no_low)
+nsamples(no_low) #36
+
+# format for neat plotting
+taxa <- no_low
+glom <- tax_glom(taxa, "Genus") # merge taxa
+C <- prune_taxa(names(sort(taxa_sums(glom), decreasing=T)), taxa)
+
+# transform to abundance 
+norm <- transform_sample_counts(C, function(x) x/sum(x)) 
+colSums(otu_table(norm)[,1:5])
+norm.merge <- tax_glom(norm, "Genus")
+
+# transform to relative abundance 
+norm.merge = transform_sample_counts(norm.merge, function(x) (100*x/sum(x))/9)
+colSums(otu_table(norm.merge)[,1:5])
+```
+
+### Plot it 
+```{r}
+physq.oomy.f <- no.zero %>%
+  tax_glom(taxrank = "Genus") %>%                     # agglomerate at phylum level
+  transform_sample_counts(function(x) {x/sum(x)} ) %>% # Transform to rel. abundance
+  psmelt() %>%                                         # Melt to long format
+  #filter(Abundance > 0.02) %>%                         # Filter out low abundance taxa
+  arrange(Phylum)                                      # Sort data frame alphabetically by phylum
+
+# Plot 
+barplot_oomy <- physq.oomy.f %>%
+  mutate(Tube = factor(Tube, ordered = TRUE,
+         levels = c("A", "B", "C", "D"),
+         labels = c("EBL", "LBL", "LBR", "FBR")) ) %>%
+  ggplot(aes(x = Tube, y = Abundance, fill = Genus)) + 
+  geom_bar(stat = "identity") +
+  scale_fill_manual(values = c("#ffb2b2", "#8ed5f0", "#ffe564", "#bc93d1" )) +
+  scale_y_continuous(name = "Relative Abundance (% of total sequences)",
+                      breaks = c(0, 2.25, 4.5, 6.75, 9), 
+                     labels = c(0, 25, 50, 75, 100),
+                     expand = c(0,0)) +
+  xlab("Sample") + 
+  theme(axis.text = element_text(size = 8),
+        axis.title = element_text(size = 10),
+        legend.text = element_text(size = 8),  
+        legend.title = element_text(size = 10) )
+barplot_oomy
+
+#saveRDS(barplot_oomy, file = "~/Documents/fish_eggs/Figures/barplot_oomy.RDS")
+```
+
+# Alpha diversity 
+Calculate indices, format data frames for statistics and plotting 
+```{r}
+# remove empty taxa
+no.zero <- prune_taxa(taxa_sums(no.zero) > 0, no.zero)
+
+# Calculate Diversity Indices
+alpha.oomy <- estimate_richness(no.zero, split = TRUE, 
+                                measures = c("Observed", "Shannon"))
+
+# add sample metadata to diversity indices
+alpha.oomy2 <- alpha.oomy %>%
+  rownames_to_column(var = "Sample_ID") %>%
+  left_join(meta_oomy, by = "Sample_ID") %>%
+  # format for plotting 
+  pivot_longer(cols = c("Observed", "Shannon"),
+               values_to = "Measure",
+               names_to = "Index") %>% 
+  # relabel samples 
+  mutate(Tube = factor(Tube, ordered = TRUE,
+         levels = c("A", "B", "C", "D"),
+         labels = c("EBL", "LBL", "LBR", "FBR")) ) %>%
+  arrange(Tube, Index)
+
+# summary statistics for plots
+alpha.oomy.sum <- alpha.oomy2 %>%
+  arrange(Tube, Index) %>% group_by(Tube, Index) %>%
+  summarise(Mean_index = mean(Measure, na.rm = TRUE),
+            StDev_index = sd(Measure, na.rm = TRUE)) 
+```
+
+### Tests 
+test if diversity indices are different
+```{r}
+### Shannon index
+ANOVA1 <- alpha.oomy2 %>%
+  filter(Index == "Shannon") %>%
+  aov(Measure~Tube, data = .)
+summary(ANOVA1) #p = 2.62e-05
+
+# conduct Tukey"s HSD test with agricolae and get letters for figure 
+letters1 <- as.matrix(HSD.test(ANOVA1,"Tube", group=TRUE, alpha = 0.05)$groups) %>%
+  as.data.frame() %>% #formatting the table with the letters
+  rownames_to_column(var="Tube") %>%
+  mutate(Measure = round(as.numeric(as.character(Measure)), digits=2),
+         groups = as.character(groups)) %>%
+  rename(Shannon = Measure)
+
+### observed ASVs index
+ANOVA2 <- alpha.oomy2 %>%
+  filter(Index == "Observed") %>%
+  aov(Measure~Tube, data = .)
+summary(ANOVA2) #p = 0.671
+letters2 <- as.matrix(HSD.test(ANOVA2,"Tube", group=TRUE, alpha = 0.05)$groups) %>%
+  as.data.frame() %>% #formatting the table with the letters
+  rownames_to_column(var="Tube") %>%
+  mutate(Measure = round(as.numeric(as.character(Measure)), digits=0),
+         groups = as.character(groups)) %>%
+  rename(Observed = Measure)
+```
+
+### Plot
+```{r}
+# generate plot
+richplot_oomy <- alpha.oomy2 %>%
+  ggplot(aes(x = Tube, y = Measure, color = Tube, Index)) +
+  facet_wrap(.~Index, scales = "free") +
+  # plot means and error bars
+  geom_errorbar(data = alpha.oomy.sum, inherit.aes = FALSE, width = 0.5, color = "black",
+                aes(x = Tube, ymin = Mean_index - StDev_index,
+                    ymax = Mean_index + StDev_index)) +
+  geom_crossbar(data = alpha.oomy.sum, inherit.aes = FALSE, fatten = 2, 
+                aes(x = Tube, color = Tube,
+                    y = Mean_index, ymin = Mean_index, ymax = Mean_index )) +
+  # plot individual data points 
+  geom_jitter(width = 0.25) +
+  # set colors 
+  scale_color_manual(name = "Sample", values = c("#ff7f7f", "#33b5e5", "#ffbb33", "#aa66cc", "#99cc00")) +
+  # format axes
+  ylab("Alpha Diversity Measure") + xlab("Sample") +
+  theme(axis.text = element_text(size = 8),
+        axis.title = element_text(size = 10))
+richplot_oomy
+```
+
+# Beta diversity 
+```{r}
+# scale to even depth
+dat_scale <- no.zero %>%
+  scale_reads(round = "round") 
+# repeat summary statistics
+smin <- min(sample_sums(dat_scale)) #18,789
+smean <- mean(sample_sums(dat_scale)) #18,794
+smax <- max(sample_sums(dat_scale)) #18,799
+
+# ordinate
+dat_nmds <- ordinate(
+  physeq = dat_scale, 
+  method = "NMDS", k=3, maxit=500, try=100,
+  distance = "bray")
+dat_nmds #stress=0.08947188 
+```
+
+### Plot
+```{r}
+# create dotplot 
+nmds_oomy <- plot_ordination(
+  physeq = dat_scale,
+  ordination = dat_nmds,
+  color = "Tube") + 
+  scale_color_manual(name = "Sample", values = c("#ff7f7f", "#33b5e5", "#ffbb33", "#aa66cc")) +
+  geom_point(aes(color = Tube), size = 4) +
+  # format axes
+  theme(axis.text = element_text(size = 8),
+        axis.title = element_text(size = 10),
+        legend.text = element_text(size = 8),  
+        legend.title = element_text(size = 10) )
+nmds_oomy
+```
+
+```{r}
+# Permanova and Betadisp 
+dat_bray <- phyloseq::distance(dat_scale, method="bray") #calculate bray curtis distance matrix
+# make a data frame from the sample_data
+sampledf <- data.frame(sample_data(no.zero))
+
+# Adonis test 
+adon1 <- adonis(dat_bray~Tube, data=sampledf)
+adon1 #p=0.001
+
+# Homogeneity of dispersion test 
+beta <- betadisper(dat_bray, sampledf$Tube)
+permutest(beta) #p=0.004
+
+# Anosim test 
+ano_group <- get_variable(dat_scale, "Tube")
+ano <- anosim(dat_bray, ano_group)
+ano$signif #p=0.001
+ano$statistic #R=0.5766604
+```
+
+# Export Figures
+Diversity plots 
+```{r}
+figure2 <- plot_grid(richplot_oomy + theme(legend.position = "none"), 
+                     nmds_oomy + theme(legend.position = "none"),
+                     nrow = 1, ncol = 2, 
+                     labels = c("A", "B"))
+figure2
+ggsave2(filename = "~/Documents/fish_eggs/Figures/figure2.svg", figure2,
+        device = "svg", dpi = 300, width = 178, height = 100, units = "mm")
+```
+
+Supplemental table
+```{r}
+# Tax table
+oomy.tax.clean <- tax_table(no.zero) %>%
+  as.data.frame() %>%
+  rownames_to_column(var = "OTU")
+# Shared table
+oomy.otu.clean <- otu_table(no.zero) %>%
+  as.data.frame() %>%
+  rownames_to_column(var = "OTU")
+# Combine
+supp_tab1 <- inner_join(oomy.tax.clean, oomy.otu.clean, by = "OTU") %>%
+  rename("EBL_1-1" = "KSOOA11", "EBL_1-2" = "KSOOA12", "EBL_1-3" = "KSOOA13",  
+         "EBL_2-1" ="KSOOA21", "EBL_2-2" = "KSOOA22", "EBL_2-3" ="KSOOA23", 
+         "EBL_3-1" ="KSOOA31", "EBL_3-2" = "KSOOA32", "EBL_3-3" ="KSOOA33", 
+         "LBL_1-1" = "KSOOB11", "LBL_1-2" = "KSOOB12", "LBL_1-3" = "KSOOB13", 
+         "LBL_2-1" = "KSOOB21", "LBL_2-2" = "KSOOB22", "LBL_2-3" = "KSOOB23",
+         "LBL_3-1" = "KSOOB31", "LBL_3-2" = "KSOOB32", "LBL_3-3" = "KSOOB33",
+         "LBR_1-1" = "KSOOC11", "LBR_1-2" = "KSOOC12", "LBR_1-3" = "KSOOC13",
+         "LBR_2-1" = "KSOOC21", "LBR_2-2" = "KSOOC22", "LBR_2-3" = "KSOOC23",
+          "LBR_3-1" = "KSOOC31", "LBR_3-2" = "KSOOC32", "LBR_3-3" = "KSOOC33",
+         "FBR_1-1" = "KSOOD11", "FBR_1-2" = "KSOOD12", "FBR_1-3" = "KSOOD13", 
+         "FBR_2-1" = "KSOOD21", "FBR_2-2" = "KSOOD22", "FBR_2-3" = "KSOOD23", 
+         "FBR_3-1" = "KSOOD31", "FBR_3-2" = "KSOOD32", "FBR_3-3" = "KSOOD33"  )
+write_delim(supp_tab1, file = "~/Documents/Supplemental_Table1.txt",
+            delim = "\t", col_names = TRUE, na = "NA")
+```
+
+-----
+end 
