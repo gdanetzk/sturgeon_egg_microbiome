@@ -1,0 +1,379 @@
+Isolate,Species,Concentration,Rep,Trial,Oomicides,mean_colony_diam,relative_growth,percent_relative_growth
+515-SCR-F-E-1,S. parasitica,0,1,1,Ethaboxam,26.0,1.05,104.70
+515-SCR-F-E-1,S. parasitica,0,1,2,Ethaboxam,32.0,1.03,102.67
+515-SCR-F-E-1,S. parasitica,0,1,3,Ethaboxam,27.5,1.01,100.61
+515-SCR-F-E-1,S. parasitica,0,2,1,Ethaboxam,23.0,0.93,92.62
+515-SCR-F-E-1,S. parasitica,0,2,2,Ethaboxam,31.0,0.99,99.47
+515-SCR-F-E-1,S. parasitica,0,2,3,Ethaboxam,27.5,1.01,100.61
+515-SCR-F-E-1,S. parasitica,0,3,1,Ethaboxam,25.5,1.03,102.68
+515-SCR-F-E-1,S. parasitica,0,3,2,Ethaboxam,30.5,0.98,97.86
+515-SCR-F-E-1,S. parasitica,0,3,3,Ethaboxam,27.0,0.99,98.78
+515-SCR-F-E-1,S. parasitica,5,1,1,Ethaboxam,0.0,0.00,0.00
+515-SCR-F-E-1,S. parasitica,5,1,2,Ethaboxam,0.0,0.00,0.00
+515-SCR-F-E-1,S. parasitica,5,1,3,Ethaboxam,2.5,0.09,9.15
+515-SCR-F-E-1,S. parasitica,5,2,1,Ethaboxam,0.0,0.00,0.00
+515-SCR-F-E-1,S. parasitica,5,2,2,Ethaboxam,0.0,0.00,0.00
+515-SCR-F-E-1,S. parasitica,5,2,3,Ethaboxam,2.0,0.07,7.32
+515-SCR-F-E-1,S. parasitica,5,3,1,Ethaboxam,0.0,0.00,0.00
+515-SCR-F-E-1,S. parasitica,5,3,2,Ethaboxam,0.0,0.00,0.00
+515-SCR-F-E-1,S. parasitica,5,3,3,Ethaboxam,0.0,0.00,0.00
+515-SCR-F-E-1,S. parasitica,100,1,1,Ethaboxam,0.0,0.00,0.00
+515-SCR-F-E-1,S. parasitica,100,1,2,Ethaboxam,0.0,0.00,0.00
+515-SCR-F-E-1,S. parasitica,100,1,3,Ethaboxam,0.0,0.00,0.00
+515-SCR-F-E-1,S. parasitica,100,2,1,Ethaboxam,0.0,0.00,0.00
+515-SCR-F-E-1,S. parasitica,100,2,2,Ethaboxam,0.0,0.00,0.00
+515-SCR-F-E-1,S. parasitica,100,2,3,Ethaboxam,0.0,0.00,0.00
+515-SCR-F-E-1,S. parasitica,100,3,1,Ethaboxam,0.0,0.00,0.00
+515-SCR-F-E-1,S. parasitica,100,3,2,Ethaboxam,0.0,0.00,0.00
+515-SCR-F-E-1,S. parasitica,100,3,3,Ethaboxam,0.0,0.00,0.00
+529-1E-A1,S. parasitica,0,1,1,Ethaboxam,68.0,1.00,100.49
+529-1E-A1,S. parasitica,0,1,2,Ethaboxam,76.0,1.01,101.11
+529-1E-A1,S. parasitica,0,1,3,Ethaboxam,70.5,0.99,98.60
+529-1E-A1,S. parasitica,0,2,1,Ethaboxam,67.5,1.00,99.75
+529-1E-A1,S. parasitica,0,2,2,Ethaboxam,75.5,1.00,100.44
+529-1E-A1,S. parasitica,0,2,3,Ethaboxam,73.5,1.03,102.80
+529-1E-A1,S. parasitica,0,3,1,Ethaboxam,67.5,1.00,99.75
+529-1E-A1,S. parasitica,0,3,2,Ethaboxam,74.0,0.98,98.45
+529-1E-A1,S. parasitica,0,3,3,Ethaboxam,70.5,0.99,98.60
+529-1E-A1,S. parasitica,5,1,1,Ethaboxam,7.0,0.10,10.34
+529-1E-A1,S. parasitica,5,1,2,Ethaboxam,9.5,0.13,12.64
+529-1E-A1,S. parasitica,5,1,3,Ethaboxam,11.5,0.16,16.08
+529-1E-A1,S. parasitica,5,2,1,Ethaboxam,7.0,0.10,10.34
+529-1E-A1,S. parasitica,5,2,2,Ethaboxam,9.0,0.12,11.97
+529-1E-A1,S. parasitica,5,2,3,Ethaboxam,12.5,0.17,17.48
+529-1E-A1,S. parasitica,5,3,1,Ethaboxam,6.5,0.10,9.61
+529-1E-A1,S. parasitica,5,3,2,Ethaboxam,8.5,0.11,11.31
+529-1E-A1,S. parasitica,5,3,3,Ethaboxam,9.5,0.13,13.29
+529-1E-A1,S. parasitica,100,1,1,Ethaboxam,0.0,0.00,0.00
+529-1E-A1,S. parasitica,100,1,2,Ethaboxam,3.5,0.05,4.66
+529-1E-A1,S. parasitica,100,1,3,Ethaboxam,4.0,0.06,5.59
+529-1E-A1,S. parasitica,100,2,1,Ethaboxam,0.0,0.00,0.00
+529-1E-A1,S. parasitica,100,2,2,Ethaboxam,5.0,0.07,6.65
+529-1E-A1,S. parasitica,100,2,3,Ethaboxam,4.0,0.06,5.59
+529-1E-A1,S. parasitica,100,3,1,Ethaboxam,0.0,0.00,0.00
+529-1E-A1,S. parasitica,100,3,2,Ethaboxam,4.5,0.06,5.99
+529-1E-A1,S. parasitica,100,3,3,Ethaboxam,32.0,0.45,44.76
+529-B-E-A2,S. ferax,0,1,1,Ethaboxam,60.5,1.01,100.83
+529-B-E-A2,S. ferax,0,1,2,Ethaboxam,68.0,1.01,100.99
+529-B-E-A2,S. ferax,0,1,3,Ethaboxam,63.5,1.02,101.87
+529-B-E-A2,S. ferax,0,2,1,Ethaboxam,61.0,1.02,101.67
+529-B-E-A2,S. ferax,0,2,2,Ethaboxam,67.5,1.00,100.25
+529-B-E-A2,S. ferax,0,2,3,Ethaboxam,62.0,0.99,99.47
+529-B-E-A2,S. ferax,0,3,1,Ethaboxam,58.5,0.98,97.50
+529-B-E-A2,S. ferax,0,3,2,Ethaboxam,66.5,0.99,98.76
+529-B-E-A2,S. ferax,0,3,3,Ethaboxam,61.5,0.99,98.66
+529-B-E-A2,S. ferax,5,1,1,Ethaboxam,5.5,0.09,9.17
+529-B-E-A2,S. ferax,5,1,2,Ethaboxam,4.0,0.06,5.94
+529-B-E-A2,S. ferax,5,1,3,Ethaboxam,6.0,0.10,9.63
+529-B-E-A2,S. ferax,5,2,1,Ethaboxam,5.0,0.08,8.33
+529-B-E-A2,S. ferax,5,2,2,Ethaboxam,4.5,0.07,6.68
+529-B-E-A2,S. ferax,5,2,3,Ethaboxam,5.5,0.09,8.82
+529-B-E-A2,S. ferax,5,3,1,Ethaboxam,4.5,0.08,7.50
+529-B-E-A2,S. ferax,5,3,2,Ethaboxam,3.5,0.05,5.20
+529-B-E-A2,S. ferax,5,3,3,Ethaboxam,6.0,0.10,9.63
+529-B-E-A2,S. ferax,100,1,1,Ethaboxam,0.0,0.00,0.00
+529-B-E-A2,S. ferax,100,1,2,Ethaboxam,2.0,0.03,2.97
+529-B-E-A2,S. ferax,100,1,3,Ethaboxam,0.0,0.00,0.00
+529-B-E-A2,S. ferax,100,2,1,Ethaboxam,0.0,0.00,0.00
+529-B-E-A2,S. ferax,100,2,2,Ethaboxam,0.0,0.00,0.00
+529-B-E-A2,S. ferax,100,2,3,Ethaboxam,0.0,0.00,0.00
+529-B-E-A2,S. ferax,100,3,1,Ethaboxam,0.0,0.00,0.00
+529-B-E-A2,S. ferax,100,3,2,Ethaboxam,1.0,0.01,1.49
+529-B-E-A2,S. ferax,100,3,3,Ethaboxam,0.0,0.00,0.00
+529-H-L-A4,S. ferax,0,1,1,Ethaboxam,54.5,0.98,98.49
+529-H-L-A4,S. ferax,0,1,2,Ethaboxam,64.5,1.00,99.74
+529-H-L-A4,S. ferax,0,1,3,Ethaboxam,30.5,0.63,63.10
+529-H-L-A4,S. ferax,0,2,1,Ethaboxam,54.0,0.98,97.59
+529-H-L-A4,S. ferax,0,2,2,Ethaboxam,65.0,1.01,100.52
+529-H-L-A4,S. ferax,0,2,3,Ethaboxam,59.0,1.22,122.07
+529-H-L-A4,S. ferax,0,3,1,Ethaboxam,57.5,1.04,103.92
+529-H-L-A4,S. ferax,0,3,2,Ethaboxam,64.5,1.00,99.74
+529-H-L-A4,S. ferax,0,3,3,Ethaboxam,55.5,1.15,114.83
+529-H-L-A4,S. ferax,5,1,1,Ethaboxam,0.0,0.00,0.00
+529-H-L-A4,S. ferax,5,1,2,Ethaboxam,6.5,0.10,10.05
+529-H-L-A4,S. ferax,5,1,3,Ethaboxam,28.0,0.58,57.93
+529-H-L-A4,S. ferax,5,2,1,Ethaboxam,1.5,0.03,2.71
+529-H-L-A4,S. ferax,5,2,2,Ethaboxam,5.0,0.08,7.73
+529-H-L-A4,S. ferax,5,2,3,Ethaboxam,1.5,0.03,3.10
+529-H-L-A4,S. ferax,5,3,1,Ethaboxam,0.0,0.00,0.00
+529-H-L-A4,S. ferax,5,3,2,Ethaboxam,7.0,0.11,10.82
+529-H-L-A4,S. ferax,5,3,3,Ethaboxam,1.5,0.03,3.10
+529-H-L-A4,S. ferax,100,1,1,Ethaboxam,0.0,0.00,0.00
+529-H-L-A4,S. ferax,100,1,2,Ethaboxam,2.5,0.04,3.87
+529-H-L-A4,S. ferax,100,1,3,Ethaboxam,0.0,0.00,0.00
+529-H-L-A4,S. ferax,100,2,1,Ethaboxam,0.0,0.00,0.00
+529-H-L-A4,S. ferax,100,2,2,Ethaboxam,2.5,0.04,3.87
+529-H-L-A4,S. ferax,100,2,3,Ethaboxam,0.0,0.00,0.00
+529-H-L-A4,S. ferax,100,3,1,Ethaboxam,0.0,0.00,0.00
+529-H-L-A4,S. ferax,100,3,2,Ethaboxam,1.0,0.02,1.55
+529-H-L-A4,S. ferax,100,3,3,Ethaboxam,0.0,0.00,0.00
+FE-18-1,S. ferax,0,1,1,Ethaboxam,67.5,1.00,99.51
+FE-18-1,S. ferax,0,1,2,Ethaboxam,73.5,1.00,99.77
+FE-18-1,S. ferax,0,1,3,Ethaboxam,60.5,1.13,113.44
+FE-18-1,S. ferax,0,2,1,Ethaboxam,67.5,1.00,99.51
+FE-18-1,S. ferax,0,2,2,Ethaboxam,74.0,1.00,100.45
+FE-18-1,S. ferax,0,2,3,Ethaboxam,66.5,1.25,124.69
+FE-18-1,S. ferax,0,3,1,Ethaboxam,68.5,1.01,100.98
+FE-18-1,S. ferax,0,3,2,Ethaboxam,73.5,1.00,99.77
+FE-18-1,S. ferax,0,3,3,Ethaboxam,33.0,0.62,61.88
+FE-18-1,S. ferax,5,1,1,Ethaboxam,3.5,0.05,5.16
+FE-18-1,S. ferax,5,1,2,Ethaboxam,3.5,0.05,4.75
+FE-18-1,S. ferax,5,1,3,Ethaboxam,3.0,0.06,5.63
+FE-18-1,S. ferax,5,2,1,Ethaboxam,4.0,0.06,5.90
+FE-18-1,S. ferax,5,2,2,Ethaboxam,3.0,0.04,4.07
+FE-18-1,S. ferax,5,2,3,Ethaboxam,2.5,0.05,4.69
+FE-18-1,S. ferax,5,3,1,Ethaboxam,3.0,0.04,4.42
+FE-18-1,S. ferax,5,3,2,Ethaboxam,3.0,0.04,4.07
+FE-18-1,S. ferax,5,3,3,Ethaboxam,1.0,0.02,1.88
+FE-18-1,S. ferax,100,1,1,Ethaboxam,0.0,0.00,0.00
+FE-18-1,S. ferax,100,1,2,Ethaboxam,1.5,0.02,2.04
+FE-18-1,S. ferax,100,1,3,Ethaboxam,1.0,0.02,1.88
+FE-18-1,S. ferax,100,2,1,Ethaboxam,0.0,0.00,0.00
+FE-18-1,S. ferax,100,2,2,Ethaboxam,2.5,0.03,3.39
+FE-18-1,S. ferax,100,2,3,Ethaboxam,1.0,0.02,1.88
+FE-18-1,S. ferax,100,3,1,Ethaboxam,0.0,0.00,0.00
+FE-18-1,S. ferax,100,3,2,Ethaboxam,2.0,0.03,2.71
+FE-18-1,S. ferax,100,3,3,Ethaboxam,0.0,0.00,0.00
+GI-331-E-1,S. parasitica,0,1,1,Ethaboxam,23.5,0.95,94.63
+GI-331-E-1,S. parasitica,0,1,2,Ethaboxam,29.5,1.00,100.00
+GI-331-E-1,S. parasitica,0,1,3,Ethaboxam,na,na,na
+GI-331-E-1,S. parasitica,0,2,1,Ethaboxam,27.0,1.09,108.72
+GI-331-E-1,S. parasitica,0,2,2,Ethaboxam,29.5,1.00,100.00
+GI-331-E-1,S. parasitica,0,2,3,Ethaboxam,23.5,1.00,100.00
+GI-331-E-1,S. parasitica,0,3,1,Ethaboxam,24.0,0.97,96.64
+GI-331-E-1,S. parasitica,0,3,2,Ethaboxam,29.5,1.00,100.00
+GI-331-E-1,S. parasitica,0,3,3,Ethaboxam,23.5,1.00,100.00
+GI-331-E-1,S. parasitica,5,1,1,Ethaboxam,0.0,0.00,0.00
+GI-331-E-1,S. parasitica,5,1,2,Ethaboxam,0.0,0.00,0.00
+GI-331-E-1,S. parasitica,5,1,3,Ethaboxam,0.0,0.00,0.00
+GI-331-E-1,S. parasitica,5,2,1,Ethaboxam,0.0,0.00,0.00
+GI-331-E-1,S. parasitica,5,2,2,Ethaboxam,0.0,0.00,0.00
+GI-331-E-1,S. parasitica,5,2,3,Ethaboxam,0.0,0.00,0.00
+GI-331-E-1,S. parasitica,5,3,1,Ethaboxam,0.0,0.00,0.00
+GI-331-E-1,S. parasitica,5,3,2,Ethaboxam,0.0,0.00,0.00
+GI-331-E-1,S. parasitica,5,3,3,Ethaboxam,0.0,0.00,0.00
+GI-331-E-1,S. parasitica,100,1,1,Ethaboxam,0.0,0.00,0.00
+GI-331-E-1,S. parasitica,100,1,2,Ethaboxam,0.0,0.00,0.00
+GI-331-E-1,S. parasitica,100,1,3,Ethaboxam,0.0,0.00,0.00
+GI-331-E-1,S. parasitica,100,2,1,Ethaboxam,0.0,0.00,0.00
+GI-331-E-1,S. parasitica,100,2,2,Ethaboxam,0.0,0.00,0.00
+GI-331-E-1,S. parasitica,100,2,3,Ethaboxam,0.0,0.00,0.00
+GI-331-E-1,S. parasitica,100,3,1,Ethaboxam,0.0,0.00,0.00
+GI-331-E-1,S. parasitica,100,3,2,Ethaboxam,0.0,0.00,0.00
+GI-331-E-1,S. parasitica,100,3,3,Ethaboxam,0.0,0.00,0.00
+KSSO5-45,Py. ult. var. ult.,0,1,1,Ethaboxam,33.5,1.00,99.50
+KSSO5-45,Py. ult. var. ult.,0,1,2,Ethaboxam,37.5,1.00,100.45
+KSSO5-45,Py. ult. var. ult.,0,1,3,Ethaboxam,45.5,1.04,103.80
+KSSO5-45,Py. ult. var. ult.,0,2,1,Ethaboxam,34.0,1.01,100.99
+KSSO5-45,Py. ult. var. ult.,0,2,2,Ethaboxam,36.5,0.98,97.77
+KSSO5-45,Py. ult. var. ult.,0,2,3,Ethaboxam,45.5,1.04,103.80
+KSSO5-45,Py. ult. var. ult.,0,3,1,Ethaboxam,33.5,1.00,99.50
+KSSO5-45,Py. ult. var. ult.,0,3,2,Ethaboxam,38.0,1.02,101.79
+KSSO5-45,Py. ult. var. ult.,0,3,3,Ethaboxam,40.5,0.92,92.40
+KSSO5-45,Py. ult. var. ult.,5,1,1,Ethaboxam,6.5,0.19,19.31
+KSSO5-45,Py. ult. var. ult.,5,1,2,Ethaboxam,13.5,0.36,36.16
+KSSO5-45,Py. ult. var. ult.,5,1,3,Ethaboxam,6.0,0.14,13.69
+KSSO5-45,Py. ult. var. ult.,5,2,1,Ethaboxam,8.5,0.25,25.25
+KSSO5-45,Py. ult. var. ult.,5,2,2,Ethaboxam,9.5,0.25,25.45
+KSSO5-45,Py. ult. var. ult.,5,2,3,Ethaboxam,8.0,0.18,18.25
+KSSO5-45,Py. ult. var. ult.,5,3,1,Ethaboxam,7.0,0.21,20.79
+KSSO5-45,Py. ult. var. ult.,5,3,2,Ethaboxam,9.5,0.25,25.45
+KSSO5-45,Py. ult. var. ult.,5,3,3,Ethaboxam,5.5,0.13,12.55
+KSSO5-45,Py. ult. var. ult.,100,1,1,Ethaboxam,3.0,0.09,8.91
+KSSO5-45,Py. ult. var. ult.,100,1,2,Ethaboxam,4.5,0.12,12.05
+KSSO5-45,Py. ult. var. ult.,100,1,3,Ethaboxam,3.5,0.08,7.98
+KSSO5-45,Py. ult. var. ult.,100,2,1,Ethaboxam,1.5,0.04,4.46
+KSSO5-45,Py. ult. var. ult.,100,2,2,Ethaboxam,5.0,0.13,13.39
+KSSO5-45,Py. ult. var. ult.,100,2,3,Ethaboxam,3.5,0.08,7.98
+KSSO5-45,Py. ult. var. ult.,100,3,1,Ethaboxam,3.0,0.09,8.91
+KSSO5-45,Py. ult. var. ult.,100,3,2,Ethaboxam,4.0,0.11,10.71
+KSSO5-45,Py. ult. var. ult.,100,3,3,Ethaboxam,3.5,0.08,7.98
+515-SCR-F-E-1,S. parasitica,0,1,1,Mefenoxam,28.0,0.99,98.82
+515-SCR-F-E-1,S. parasitica,0,1,2,Mefenoxam,32.0,1.05,104.92
+515-SCR-F-E-1,S. parasitica,0,1,3,Mefenoxam,30.5,1.06,105.78
+515-SCR-F-E-1,S. parasitica,0,2,1,Mefenoxam,28.5,1.01,100.59
+515-SCR-F-E-1,S. parasitica,0,2,2,Mefenoxam,30.5,1.00,100.00
+515-SCR-F-E-1,S. parasitica,0,2,3,Mefenoxam,26.5,0.92,91.91
+515-SCR-F-E-1,S. parasitica,0,3,1,Mefenoxam,28.5,1.01,100.59
+515-SCR-F-E-1,S. parasitica,0,3,2,Mefenoxam,29.0,0.95,95.08
+515-SCR-F-E-1,S. parasitica,0,3,3,Mefenoxam,29.5,1.02,102.31
+515-SCR-F-E-1,S. parasitica,5,1,1,Mefenoxam,22.5,0.79,79.41
+515-SCR-F-E-1,S. parasitica,5,1,2,Mefenoxam,25.5,0.84,83.61
+515-SCR-F-E-1,S. parasitica,5,1,3,Mefenoxam,19.0,0.66,65.90
+515-SCR-F-E-1,S. parasitica,5,2,1,Mefenoxam,21.5,0.76,75.88
+515-SCR-F-E-1,S. parasitica,5,2,2,Mefenoxam,23.0,0.75,75.41
+515-SCR-F-E-1,S. parasitica,5,2,3,Mefenoxam,23.0,0.80,79.77
+515-SCR-F-E-1,S. parasitica,5,3,1,Mefenoxam,20.5,0.72,72.35
+515-SCR-F-E-1,S. parasitica,5,3,2,Mefenoxam,26.0,0.85,85.25
+515-SCR-F-E-1,S. parasitica,5,3,3,Mefenoxam,27.5,0.95,95.38
+515-SCR-F-E-1,S. parasitica,100,1,1,Mefenoxam,13.0,0.46,45.88
+515-SCR-F-E-1,S. parasitica,100,1,2,Mefenoxam,14.5,0.48,47.54
+515-SCR-F-E-1,S. parasitica,100,1,3,Mefenoxam,14.0,0.49,48.55
+515-SCR-F-E-1,S. parasitica,100,2,1,Mefenoxam,11.0,0.39,38.82
+515-SCR-F-E-1,S. parasitica,100,2,2,Mefenoxam,13.0,0.43,42.62
+515-SCR-F-E-1,S. parasitica,100,2,3,Mefenoxam,8.5,0.29,29.48
+515-SCR-F-E-1,S. parasitica,100,3,1,Mefenoxam,15.0,0.53,52.94
+515-SCR-F-E-1,S. parasitica,100,3,2,Mefenoxam,14.0,0.46,45.90
+515-SCR-F-E-1,S. parasitica,100,3,3,Mefenoxam,11.5,0.40,39.88
+529-1E-A1,S. parasitica,0,1,1,Mefenoxam,68.0,1.00,100.25
+529-1E-A1,S. parasitica,0,1,2,Mefenoxam,72.0,0.99,99.08
+529-1E-A1,S. parasitica,0,1,3,Mefenoxam,68.0,1.00,100.49
+529-1E-A1,S. parasitica,0,2,1,Mefenoxam,67.5,1.00,99.51
+529-1E-A1,S. parasitica,0,2,2,Mefenoxam,73.0,1.00,100.46
+529-1E-A1,S. parasitica,0,2,3,Mefenoxam,67.0,0.99,99.01
+529-1E-A1,S. parasitica,0,3,1,Mefenoxam,68.0,1.00,100.25
+529-1E-A1,S. parasitica,0,3,2,Mefenoxam,73.0,1.00,100.46
+529-1E-A1,S. parasitica,0,3,3,Mefenoxam,68.0,1.00,100.49
+529-1E-A1,S. parasitica,5,1,1,Mefenoxam,52.0,0.77,76.66
+529-1E-A1,S. parasitica,5,1,2,Mefenoxam,54.0,0.74,74.31
+529-1E-A1,S. parasitica,5,1,3,Mefenoxam,53.0,0.78,78.33
+529-1E-A1,S. parasitica,5,2,1,Mefenoxam,50.5,0.74,74.45
+529-1E-A1,S. parasitica,5,2,2,Mefenoxam,55.5,0.76,76.38
+529-1E-A1,S. parasitica,5,2,3,Mefenoxam,51.5,0.76,76.11
+529-1E-A1,S. parasitica,5,3,1,Mefenoxam,50.0,0.74,73.71
+529-1E-A1,S. parasitica,5,3,2,Mefenoxam,53.0,0.73,72.94
+529-1E-A1,S. parasitica,5,3,3,Mefenoxam,53.0,0.78,78.33
+529-1E-A1,S. parasitica,100,1,1,Mefenoxam,30.0,0.44,44.23
+529-1E-A1,S. parasitica,100,1,2,Mefenoxam,32.5,0.45,44.72
+529-1E-A1,S. parasitica,100,1,3,Mefenoxam,34.5,0.51,50.99
+529-1E-A1,S. parasitica,100,2,1,Mefenoxam,33.0,0.49,48.65
+529-1E-A1,S. parasitica,100,2,2,Mefenoxam,32.0,0.44,44.04
+529-1E-A1,S. parasitica,100,2,3,Mefenoxam,33.0,0.49,48.77
+529-1E-A1,S. parasitica,100,3,1,Mefenoxam,33.0,0.49,48.65
+529-1E-A1,S. parasitica,100,3,2,Mefenoxam,33.0,0.45,45.41
+529-1E-A1,S. parasitica,100,3,3,Mefenoxam,33.0,0.49,48.77
+529-B-E-A2,S. ferax,0,1,1,Mefenoxam,59.0,0.96,96.20
+529-B-E-A2,S. ferax,0,1,2,Mefenoxam,65.5,1.03,102.61
+529-B-E-A2,S. ferax,0,1,3,Mefenoxam,59.0,0.97,96.99
+529-B-E-A2,S. ferax,0,2,1,Mefenoxam,62.0,1.01,101.09
+529-B-E-A2,S. ferax,0,2,2,Mefenoxam,63.0,0.99,98.69
+529-B-E-A2,S. ferax,0,2,3,Mefenoxam,62.5,1.03,102.74
+529-B-E-A2,S. ferax,0,3,1,Mefenoxam,63.0,1.03,102.72
+529-B-E-A2,S. ferax,0,3,2,Mefenoxam,63.0,0.99,98.69
+529-B-E-A2,S. ferax,0,3,3,Mefenoxam,61.0,1.00,100.27
+529-B-E-A2,S. ferax,5,1,1,Mefenoxam,45.5,0.74,74.18
+529-B-E-A2,S. ferax,5,1,2,Mefenoxam,47.5,0.74,74.41
+529-B-E-A2,S. ferax,5,1,3,Mefenoxam,47.5,0.78,78.08
+529-B-E-A2,S. ferax,5,2,1,Mefenoxam,45.0,0.73,73.37
+529-B-E-A2,S. ferax,5,2,2,Mefenoxam,47.0,0.74,73.63
+529-B-E-A2,S. ferax,5,2,3,Mefenoxam,48.0,0.79,78.90
+529-B-E-A2,S. ferax,5,3,1,Mefenoxam,45.0,0.73,73.37
+529-B-E-A2,S. ferax,5,3,2,Mefenoxam,48.0,0.75,75.20
+529-B-E-A2,S. ferax,5,3,3,Mefenoxam,46.5,0.76,76.44
+529-B-E-A2,S. ferax,100,1,1,Mefenoxam,28.0,0.46,45.65
+529-B-E-A2,S. ferax,100,1,2,Mefenoxam,30.5,0.48,47.78
+529-B-E-A2,S. ferax,100,1,3,Mefenoxam,29.5,0.48,48.49
+529-B-E-A2,S. ferax,100,2,1,Mefenoxam,27.5,0.45,44.84
+529-B-E-A2,S. ferax,100,2,2,Mefenoxam,27.5,0.43,43.08
+529-B-E-A2,S. ferax,100,2,3,Mefenoxam,27.0,0.44,44.38
+529-B-E-A2,S. ferax,100,3,1,Mefenoxam,29.0,0.47,47.28
+529-B-E-A2,S. ferax,100,3,2,Mefenoxam,16.5,0.26,25.85
+529-B-E-A2,S. ferax,100,3,3,Mefenoxam,28.0,0.46,46.03
+529-H-L-A4,S. ferax,0,1,1,Mefenoxam,36.5,0.99,98.65
+529-H-L-A4,S. ferax,0,1,2,Mefenoxam,na,na,na
+529-H-L-A4,S. ferax,0,1,3,Mefenoxam,34.0,0.95,94.88
+529-H-L-A4,S. ferax,0,2,1,Mefenoxam,34.0,0.92,91.89
+529-H-L-A4,S. ferax,0,2,2,Mefenoxam,24.0,0.74,74.42
+529-H-L-A4,S. ferax,0,2,3,Mefenoxam,36.5,1.02,101.86
+529-H-L-A4,S. ferax,0,3,1,Mefenoxam,40.5,1.09,109.46
+529-H-L-A4,S. ferax,0,3,2,Mefenoxam,40.5,1.26,125.58
+529-H-L-A4,S. ferax,0,3,3,Mefenoxam,37.0,1.03,103.26
+529-H-L-A4,S. ferax,5,1,1,Mefenoxam,28.0,0.76,75.68
+529-H-L-A4,S. ferax,5,1,2,Mefenoxam,36.5,1.13,113.18
+529-H-L-A4,S. ferax,5,1,3,Mefenoxam,25.0,0.70,69.77
+529-H-L-A4,S. ferax,5,2,1,Mefenoxam,34.5,0.93,93.24
+529-H-L-A4,S. ferax,5,2,2,Mefenoxam,29.5,0.91,91.47
+529-H-L-A4,S. ferax,5,2,3,Mefenoxam,18.0,0.50,50.23
+529-H-L-A4,S. ferax,5,3,1,Mefenoxam,41.0,1.11,110.81
+529-H-L-A4,S. ferax,5,3,2,Mefenoxam,18.0,0.56,55.81
+529-H-L-A4,S. ferax,5,3,3,Mefenoxam,16.0,0.45,44.65
+529-H-L-A4,S. ferax,100,1,1,Mefenoxam,21.5,0.58,58.11
+529-H-L-A4,S. ferax,100,1,2,Mefenoxam,13.0,0.40,40.31
+529-H-L-A4,S. ferax,100,1,3,Mefenoxam,11.5,0.32,32.09
+529-H-L-A4,S. ferax,100,2,1,Mefenoxam,12.0,0.32,32.43
+529-H-L-A4,S. ferax,100,2,2,Mefenoxam,9.5,0.29,29.46
+529-H-L-A4,S. ferax,100,2,3,Mefenoxam,8.5,0.24,23.72
+529-H-L-A4,S. ferax,100,3,1,Mefenoxam,8.5,0.23,22.97
+529-H-L-A4,S. ferax,100,3,2,Mefenoxam,12.5,0.39,38.76
+529-H-L-A4,S. ferax,100,3,3,Mefenoxam,8.0,0.22,22.33
+FE-18-1,S. ferax,0,1,1,Mefenoxam,67.0,1.00,100.00
+FE-18-1,S. ferax,0,1,2,Mefenoxam,48.0,0.78,78.26
+FE-18-1,S. ferax,0,1,3,Mefenoxam,66.5,1.00,99.50
+FE-18-1,S. ferax,0,2,1,Mefenoxam,66.5,0.99,99.25
+FE-18-1,S. ferax,0,2,2,Mefenoxam,68.0,1.11,110.87
+FE-18-1,S. ferax,0,2,3,Mefenoxam,67.0,1.00,100.25
+FE-18-1,S. ferax,0,3,1,Mefenoxam,67.5,1.01,100.75
+FE-18-1,S. ferax,0,3,2,Mefenoxam,68.0,1.11,110.87
+FE-18-1,S. ferax,0,3,3,Mefenoxam,67.0,1.00,100.25
+FE-18-1,S. ferax,5,1,1,Mefenoxam,44.0,0.66,65.67
+FE-18-1,S. ferax,5,1,2,Mefenoxam,46.0,0.75,75.00
+FE-18-1,S. ferax,5,1,3,Mefenoxam,43.0,0.64,64.34
+FE-18-1,S. ferax,5,2,1,Mefenoxam,44.0,0.66,65.67
+FE-18-1,S. ferax,5,2,2,Mefenoxam,48.0,0.78,78.26
+FE-18-1,S. ferax,5,2,3,Mefenoxam,46.0,0.69,68.83
+FE-18-1,S. ferax,5,3,1,Mefenoxam,47.5,0.71,70.90
+FE-18-1,S. ferax,5,3,2,Mefenoxam,47.0,0.77,76.63
+FE-18-1,S. ferax,5,3,3,Mefenoxam,47.0,0.70,70.32
+FE-18-1,S. ferax,100,1,1,Mefenoxam,33.0,0.49,49.25
+FE-18-1,S. ferax,100,1,2,Mefenoxam,37.0,0.60,60.33
+FE-18-1,S. ferax,100,1,3,Mefenoxam,35.5,0.53,53.12
+FE-18-1,S. ferax,100,2,1,Mefenoxam,35.5,0.53,52.99
+FE-18-1,S. ferax,100,2,2,Mefenoxam,35.5,0.58,57.88
+FE-18-1,S. ferax,100,2,3,Mefenoxam,37.0,0.55,55.36
+FE-18-1,S. ferax,100,3,1,Mefenoxam,17.5,0.26,26.12
+FE-18-1,S. ferax,100,3,2,Mefenoxam,39.0,0.64,63.59
+FE-18-1,S. ferax,100,3,3,Mefenoxam,35.5,0.53,53.12
+GI-331-E-1,S. parasitica,0,1,1,Mefenoxam,23.0,0.95,95.17
+GI-331-E-1,S. parasitica,0,1,2,Mefenoxam,26.5,1.01,100.63
+GI-331-E-1,S. parasitica,0,1,3,Mefenoxam,24.0,1.02,102.13
+GI-331-E-1,S. parasitica,0,2,1,Mefenoxam,23.5,0.97,97.24
+GI-331-E-1,S. parasitica,0,2,2,Mefenoxam,26.0,0.99,98.73
+GI-331-E-1,S. parasitica,0,2,3,Mefenoxam,23.5,1.00,100.00
+GI-331-E-1,S. parasitica,0,3,1,Mefenoxam,26.0,1.08,107.59
+GI-331-E-1,S. parasitica,0,3,2,Mefenoxam,26.5,1.01,100.63
+GI-331-E-1,S. parasitica,0,3,3,Mefenoxam,23.0,0.98,97.87
+GI-331-E-1,S. parasitica,5,1,1,Mefenoxam,20.5,0.85,84.83
+GI-331-E-1,S. parasitica,5,1,2,Mefenoxam,20.5,0.78,77.85
+GI-331-E-1,S. parasitica,5,1,3,Mefenoxam,18.0,0.77,76.60
+GI-331-E-1,S. parasitica,5,2,1,Mefenoxam,19.0,0.79,78.62
+GI-331-E-1,S. parasitica,5,2,2,Mefenoxam,18.5,0.70,70.25
+GI-331-E-1,S. parasitica,5,2,3,Mefenoxam,17.0,0.72,72.34
+GI-331-E-1,S. parasitica,5,3,1,Mefenoxam,22.0,0.91,91.03
+GI-331-E-1,S. parasitica,5,3,2,Mefenoxam,22.0,0.84,83.54
+GI-331-E-1,S. parasitica,5,3,3,Mefenoxam,18.0,0.77,76.60
+GI-331-E-1,S. parasitica,100,1,1,Mefenoxam,20.5,0.85,84.83
+GI-331-E-1,S. parasitica,100,1,2,Mefenoxam,19.0,0.72,72.15
+GI-331-E-1,S. parasitica,100,1,3,Mefenoxam,15.5,0.66,65.96
+GI-331-E-1,S. parasitica,100,2,1,Mefenoxam,22.0,0.91,91.03
+GI-331-E-1,S. parasitica,100,2,2,Mefenoxam,20.0,0.76,75.95
+GI-331-E-1,S. parasitica,100,2,3,Mefenoxam,15.5,0.66,65.96
+GI-331-E-1,S. parasitica,100,3,1,Mefenoxam,14.0,0.58,57.93
+GI-331-E-1,S. parasitica,100,3,2,Mefenoxam,18.0,0.68,68.35
+GI-331-E-1,S. parasitica,100,3,3,Mefenoxam,12.5,0.53,53.19
+KSSO5-45,Py. ult. var. ult.,0,1,1,Mefenoxam,36.5,1.02,102.34
+KSSO5-45,Py. ult. var. ult.,0,1,2,Mefenoxam,40.0,1.02,101.69
+KSSO5-45,Py. ult. var. ult.,0,1,3,Mefenoxam,36.0,1.01,101.41
+KSSO5-45,Py. ult. var. ult.,0,2,1,Mefenoxam,35.5,1.00,99.53
+KSSO5-45,Py. ult. var. ult.,0,2,2,Mefenoxam,40.0,1.02,101.69
+KSSO5-45,Py. ult. var. ult.,0,2,3,Mefenoxam,33.5,0.94,94.37
+KSSO5-45,Py. ult. var. ult.,0,3,1,Mefenoxam,35.0,0.98,98.13
+KSSO5-45,Py. ult. var. ult.,0,3,2,Mefenoxam,38.0,0.97,96.61
+KSSO5-45,Py. ult. var. ult.,0,3,3,Mefenoxam,37.0,1.04,104.23
+KSSO5-45,Py. ult. var. ult.,5,1,1,Mefenoxam,4.0,0.11,11.21
+KSSO5-45,Py. ult. var. ult.,5,1,2,Mefenoxam,3.0,0.08,7.63
+KSSO5-45,Py. ult. var. ult.,5,1,3,Mefenoxam,3.5,0.10,9.86
+KSSO5-45,Py. ult. var. ult.,5,2,1,Mefenoxam,3.5,0.10,9.81
+KSSO5-45,Py. ult. var. ult.,5,2,2,Mefenoxam,4.0,0.10,10.17
+KSSO5-45,Py. ult. var. ult.,5,2,3,Mefenoxam,3.0,0.08,8.45
+KSSO5-45,Py. ult. var. ult.,5,3,1,Mefenoxam,2.5,0.07,7.01
+KSSO5-45,Py. ult. var. ult.,5,3,2,Mefenoxam,3.5,0.09,8.90
+KSSO5-45,Py. ult. var. ult.,5,3,3,Mefenoxam,3.0,0.08,8.45
+KSSO5-45,Py. ult. var. ult.,100,1,1,Mefenoxam,0.0,0.00,0.00
+KSSO5-45,Py. ult. var. ult.,100,1,2,Mefenoxam,4.0,0.10,10.17
+KSSO5-45,Py. ult. var. ult.,100,1,3,Mefenoxam,2.5,0.07,7.04
+KSSO5-45,Py. ult. var. ult.,100,2,1,Mefenoxam,3.5,0.10,9.81
+KSSO5-45,Py. ult. var. ult.,100,2,2,Mefenoxam,4.0,0.10,10.17
+KSSO5-45,Py. ult. var. ult.,100,2,3,Mefenoxam,0.0,0.00,0.00
+KSSO5-45,Py. ult. var. ult.,100,3,1,Mefenoxam,0.0,0.00,0.00
+KSSO5-45,Py. ult. var. ult.,100,3,2,Mefenoxam,9.5,0.24,24.15
+KSSO5-45,Py. ult. var. ult.,100,3,3,Mefenoxam,6.5,0.18,18.31
